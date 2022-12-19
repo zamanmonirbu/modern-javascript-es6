@@ -1,17 +1,11 @@
-//process one
-function function1( n1,n2){
-    return n1+n2;
-}
-f1=function1(1,2);
-console.log(f1);
-
-//process two
-let function2= function ( n1,n2){
-    return n1+n2;
-}
-f2=function2(1,2);
-console.log(f2);
-
-//process three
-let function3=(n1,n2)=> n1+n2;
-console.log(function3(1,2));
+//Class object
+ class Student{
+        constructor(name,roll){
+            this.sName=name;
+            this.sRoll=roll;
+            this.school="Mominpur";
+        }
+ }
+let Student1=new Student("MONIR",19);
+let Student2=new Student("GONI",19);
+console.log(Student1,Student2);
