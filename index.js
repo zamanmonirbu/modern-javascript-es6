@@ -10,7 +10,10 @@ class child extends parent{
         this.sonName="monir";
         this.doughterName="Monira";
     }
+    createFunction(){
+       return this.fatherName+" "+this.sonName+" "+this.doughterName;
+    }
 }
 
 let information=new child();
-console.log(information);
+console.log(information.createFunction());
