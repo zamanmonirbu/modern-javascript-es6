@@ -9,3 +9,4 @@ console.log(first_cocate);
 
 let second_arry=[...arry1,...arry2,...arry3];
 console.log(second_arry);
+console.log(second_arry);
