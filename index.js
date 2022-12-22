@@ -1,19 +1,9 @@
-//inheritance;
-class parent{
-    constructor(){
-        this.fatherName="Mintu";
-    }
-}
-class child extends parent{
-    constructor(){
-        super();
-        this.sonName="monir";
-        this.doughterName="Monira";
-    }
-    createFunction(){
-       return this.fatherName+" "+this.sonName+" "+this.doughterName;
-    }
-}
+//Easy object access
+const information={name:"monir",Gf:"NO",phone:"01400650261",address:{vill:'kaute',upzela:'ghatail'}};
 
-let information=new child();
-console.log(information.createFunction());
+
+const {vill}=information.address;
+const {name}=information;
+
+
+console.log(vill);
