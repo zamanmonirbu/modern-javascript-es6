@@ -1,11 +1,19 @@
-//Undefine
-let undefine_Var;
-console.log(undefine_Var);
-function add(n1,n2){
-    console.log(n1+n2);
-}
+//  Apply map, filter, find on an array of objects
+const student=[
+    { roll:21,name:"monir"},
+    { roll:31,name:"Jahir"},
+    { roll:41,name:"Halim"},
+    { roll:51,name:"Galim"}
 
-let result=add(3);
-console.log(result);
-let fun=undefined;
-console.log(fun);
+],another=[];
+
+
+// for(let i=0;i<student.length;i++){
+//     let content=student[i].name;
+//     another[i]=content;
+
+// }
+
+const name=student.map( s => s.name);
+
+console.log(name);
