@@ -1,10 +1,19 @@
-//24-4 JSON, JSON Structure, parse, stringify, JSON properties
-let information={
-    name:"Monir",vill:"Kaute Nogor",Pn:0172727727
-};
 
-let AtJ=JSON.stringify(information);
-let JtA=JSON.parse(AtJ);
+let Objects={
+    firstName:"Monir",
+    LastName:"Uzzaman",
+    salary:15000,
+    getFullName: function (){
+        this.fullName=this.firstName+this.LastName;
+        return this.fullName;
+    },
+    chargeBill: function(amount){
+        this.salary=this.salary-amount;
+        return this.salary;
+    } 
+}
 
-console.log(AtJ);
-console.log(JtA);
+Objects.chargeBill(200);
+Objects.getFullName();
+console.log(Objects.salary);
+console.log(Objects.fullName);
