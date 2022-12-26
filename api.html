@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="user-name"></h1>
+
+    <script>
+        fetch('http://www.boredapi.com/api/activity/')
+        .then(req=>req.json())
+        .then(data=>{
+            let fullName=data.activity;
+            // let pName=fUser.name;
+            // let fullName=fUser.activity;
+            document.getElementById('user-name').innerText=fullName;
+            console.log(fullName);
+        })
+
+
+
+    //    fetch(' ')
+    //    .then(promis=>promis.json())
+    //    .then(data=>{
+    //     const kname=data.results[0];
+    //     const name=kname.name;
+    //     const userFull=`${name.title} ${name.first} ${name.last}`;
+    //     document.getElementById('user-name').innerText=userFull;
+    //     console.log(userFull);
+    //    })
+       
+
+       
+    </script>
+</body>
+</html>
